@@ -54,7 +54,7 @@ function App() {
       <div className="dashboard-container">
         {/* <PcapUpload /> */}
         {status === apiStatus.SUCCESS && (
-          <BrowserRouter>
+          <BrowserRouter basename="/ShadowTraceAI/">
             <Header />
             <Routes>
               <Route exact path="/" element={<Dashboard />} />
